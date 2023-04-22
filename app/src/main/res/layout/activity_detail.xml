@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/baseline_add_photo_alternate_24"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/descTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:text="Description:"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Nom:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Quantité en stock :"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_qteS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Prix de Revient unitaire:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_prixAu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="prix"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Prix de revient total:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_priAt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Prix de vente unitaire:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_prixVu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Prix de vente total:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_priVt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Marge unitaire brute:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_margeU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Marge totale brute:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_margeT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Marge totale brute:"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Date d'expiration:"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/detail_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Nom product"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/recordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Enregistrer une vente"
+            android:textSize="17sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
